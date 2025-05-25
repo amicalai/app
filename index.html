@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Amical App</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <style>
     body {
       margin: 0;
@@ -34,7 +35,7 @@
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
       background: #fff;
       width: 100%;
-      max-width: 400px;
+      max-width: 450px;
       text-align: center;
     }
 
@@ -45,7 +46,10 @@
     }
 
     .button {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
       width: 100%;
       background-color: #ec407a;
       color: #fff;
@@ -62,6 +66,10 @@
 
     .button:hover {
       background-color: #d6366b;
+    }
+
+    .material-icons {
+      font-size: 20px;
     }
 
     .footer {
@@ -83,10 +91,12 @@
   <div class="container">
     <h1>Choisissez votre application</h1>
     <a class="button" href="https://resident-app.amical-ai.com">
-      Application Amical pour résidents, familles et particuliers
+      <span class="material-icons">home</span>
+      Résidents, familles et particuliers
     </a>
     <a class="button" href="https://residence.amical-ai.com">
-      Application Amical pour les gestionnaires et employés des résidences
+      <span class="material-icons">badge</span>
+      Gestionnaires de résidences et professionnels de la santé
     </a>
   </div>
 
